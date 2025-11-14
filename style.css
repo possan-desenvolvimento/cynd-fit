@@ -165,7 +165,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 2;
-    max-width: 500px; /* Limita o tamanho máximo */
+    max-width: 2000px; /* Limita o tamanho máximo */
 }
 
 .image-placeholder {
@@ -226,7 +226,7 @@ body {
     }
     
     .image-placeholder {
-        width: 300px;
+        width: 200px;
         height: 300px;
     }
     
