@@ -99,6 +99,7 @@ body {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
+    gap: 4rem; /* Espaço entre conteúdo e imagem */
 }
 
 .hero::before {
@@ -116,10 +117,11 @@ body {
     flex: 1;
     max-width: 600px;
     z-index: 2;
+    margin-left: 10%; /* Substitui o 350px fixo por porcentagem */
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 5vw, 3.5rem); /* Responsivo */
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
@@ -129,7 +131,7 @@ body {
 }
 
 .hero-content p {
-    font-size: 1.3rem;
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem); /* Responsivo */
     margin-bottom: 2.5rem;
     opacity: 0.95;
     font-weight: 300;
@@ -163,10 +165,12 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 2;
+    max-width: 500px; /* Limita o tamanho máximo */
 }
 
 .image-placeholder {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 400px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
@@ -176,11 +180,63 @@ body {
     align-items: center;
     color: rgba(255, 255, 255, 0.7);
     border: 2px dashed rgba(255, 255, 255, 0.3);
+    overflow: hidden; /* Para a imagem não vazar */
 }
 
 .image-placeholder i {
     font-size: 4rem;
     margin-bottom: 1rem;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .hero {
+        gap: 2rem;
+        padding: 120px 2rem 60px;
+    }
+    
+    .hero-content {
+        margin-left: 5%; /* Reduz a margem em tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Empilha verticalmente */
+        text-align: center;
+        padding: 100px 1rem 40px;
+        gap: 2rem;
+    }
+    
+    .hero-content {
+        margin-left: 0; /* Remove a margem em mobile */
+        max-width: 100%;
+    }
+    
+    .image-placeholder {
+        width: 350px;
+        height: 350px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 1rem 30px;
+    }
+    
+    .image-placeholder {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
 }
 
 /* Sections comuns */

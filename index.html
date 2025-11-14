@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <h2>CYND-FIT</h2>
+                <h2>CYND_FIT</h2>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Início</a></li>
@@ -29,18 +29,16 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Transforme Sua Saúde com <span>Cynd-Fit</span></h1>
-            <p>Produtos Herbalife de qualidade para uma vida mais saudável e equilibrada</p>
-            <button class="cta-button" onclick="scrollToContact()">
-                <i class="fab fa-whatsapp"></i> Comece Sua Transformação
-            </button>
-        </div>
-        <div class="hero-image">
-            <div class="image-placeholder">
-                <i class="fas fa-heartbeat"></i>
-                <p>Imagem de produtos saudáveis</p>
-            </div>
+            <div class="hero-content">
+                <h1>Transforme Sua Saúde com <span>Cynd-Fit</span></h1>
+                <p>Produtos Herbalife de qualidade para uma vida mais saudável e equilibrada</p>
+                <button class="cta-button" onclick="window.open('https://wa.me/5511992454859', '_blank')">
+                    <i class="fab fa-whatsapp"></i> Comece Sua Transformação
+                </button>
+            </div>        
+            <div class="hero-image">
+        <div class="image-placeholder">
+            <img src="produtos-cynd.png" alt="Produtos Herbalife" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
         </div>
     </section>
 
@@ -57,10 +55,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user"></i>
-                        <p>Foto da Revendedora</p>
-                    </div>
+                    <img src="foto-cynd.jpeg" alt="Cynd - Revendedora" style="width: 100%; border-radius: 10px;">
                 </div>
             </div>
         </div>
@@ -120,8 +115,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Produtos de qualidade excelente! O shake me ajudou muito na minha rotina saudável. Entrega rápida e atendimento perfeito."</p>
-                    <span>- Maria Silva</span>
+                    <p>"Perdi 7kg em 2 meses com os produtos Herbalife! A Cynd me acompanhou em toda a jornada e os resultados foram incríveis. Recomendo demais!"</p>
+                    <span>- Isabely Almeira </span>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">
@@ -131,8 +126,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Chá concentrado maravilhoso! Me dá energia para o dia todo sem aquela agitação do café. Recomendo muito!"</p>
-                    <span>- João Pereira</span>
+                    <p>"Enfim encontrei shakes que são realmente gostosos! O sabor é maravilhoso e me sinto saciada por horas. Mudou minha relação com a alimentação saudável."</p>
+                    <span>- Maria Silva </span>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">
@@ -142,9 +137,22 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <p>"Atendimento excelente da Cynd! Me orientou sobre os produtos e hoje me sinto muito melhor com minha nova rotina."</p>
-                    <span>- Ana Costa</span>
+                    <p>"Atendimento personalizado e produtos de alta qualidade! A Cynd entendeu minhas necessidades e montou um plano perfeito para minha rotina."</p>
+                    <span>- Ana Freitas </span>
                 </div>
+
+                 <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Mais energia e disposição no dia a dia! Os chás e suplementos me deram o gás que faltava para manter a rotina de exercícios e trabalho."</p>
+                    <span>- Taciana Aparecida </span>
+                </div>
+
             </div>
         </div>
     </section>
@@ -160,10 +168,10 @@
                     <div class="contact-icon">
                         <i class="fab fa-whatsapp"></i>
                     </div>
-                    <div class="contact-details">
+                   <div class="contact-details">
                         <h3>WhatsApp</h3>
                         <p>Atendimento personalizado</p>
-                        <button class="whatsapp-btn" onclick="openWhatsApp()">
+                        <button class="whatsapp-btn" onclick="window.open('https://wa.me/5511992454859', '_blank')">
                             <i class="fab fa-whatsapp"></i> Enviar Mensagem
                         </button>
                     </div>
@@ -175,25 +183,12 @@
                     </div>
                     <div class="contact-details">
                         <h3>Instagram</h3>
-                        <p>@cynd.fit</p>
-                        <button class="instagram-btn" onclick="openInstagram()">
-                            <i class="fab fa-instagram"></i> Seguir
+                        <p>Siga-nos para novidades</p>
+                        <button class="instagram-btn" onclick="window.open('https://instagram.com/cynd_fit/', '_blank')">
+                            <i class="fab fa-instagram"></i> Seguir no Instagram
                         </button>
                     </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Email</h3>
-                        <p>contato@cyndfit.com</p>
-                        <button class="email-btn" onclick="openEmail()">
-                            <i class="fas fa-envelope"></i> Enviar Email
-                        </button>
-                    </div>
-                </div>
+                </div>                
             </div>
         </div>
     </section>
@@ -203,7 +198,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>CYND-FIT</h3>
+                    <h3>CYND_FIT</h3>
                     <p>Sua jornada para uma vida saudável</p>
                 </div>
                 <div class="footer-links">
@@ -214,10 +209,15 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Cynd-Fit. Todos os direitos reservados.</p>
+                <p>&copy; 2025 - Desenvolvido por <a href="https://possandesenvolvimento.com.br/" target="_blank" style="color: white; text-decoration: none; transition: text-decoration 0.3s;">LP Automações e Soluções</a></p>
+                    <style>
+                        a:hover {
+                            text-decoration: underline !important;
+                        }
+                    </style>
+
                 <p class="disclaimer">
-                    *Revendedora autorizada Herbalife. Produtos para revenda. Consulte sempre um profissional de saúde para orientações nutricionais.
-                </p>
+                    *Todos os produtos usados no seu processo de reeducação alimentar e auxiliar e ajudar na sua saúde são alta qualidade, desenvolvidos por especialistas.</p>
             </div>
         </div>
     </footer>
